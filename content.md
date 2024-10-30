@@ -154,4 +154,4 @@ int main() {
 
 10) Conclusion: 
 
-Password Strength Checker is not just a technical tool but a critical component of a comprehensive security strategy
+Password Strength Checker is not just a technical tool but a critical component of a comprehensive security strategy 
