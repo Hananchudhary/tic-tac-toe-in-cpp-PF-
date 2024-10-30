@@ -51,7 +51,7 @@ Range: strength of password {weak,moderate,strong}
 We can use inverse function for suggestion of strong password
 f^-1(strong) = password
 
-7) Password Strength Checker and Probability: 
+7) Password Strength Checker and Probability : 
 
   • Probability of Successful Guessing
        P = 1/N  (N =c^L)
@@ -139,7 +139,7 @@ int main() {
     else {
         cout << "Your password is strong!" << endl;
     }
-    return 0;
+    return  0;
 }
 
 9) Real World Applications of Password Strength Checker: 
