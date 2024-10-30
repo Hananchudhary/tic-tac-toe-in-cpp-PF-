@@ -14,8 +14,6 @@ Password strength checker is a tool designed to evaluate the security of a passw
       H = log (c)  base 2
       •   Number theory 
       •   Pattern matching dictionary lookup 
-
-
 3) Password Strength Checker and Logical Proof:
 
 This is how password strength checker works:
@@ -26,12 +24,12 @@ D(P) = Password has digit
 S(P) = Password has special character 
 R(P) = Password is strong 
 (U(P) ∧ L(P) ∧ D(P) ∧ S(P)) → R(P)
- • Proof by cases 
+ • Proof by cases :
        • Case 1 (Too Short)
        • Case 2 (Lacks Complexity)                     
        • Case 3 (Predictable Patterns)
        • Case 4 (Repeated or Sequential Characters)
-     A password P is weak if it meets any of the case
+     A password P is weak if it meets any of the case.
 
 4) Password Strength Checker and Set Theory: 
 
@@ -39,6 +37,8 @@ R(P) = Password is strong
 • Union    (Should be greater)
 • Intersection         (Should be ∅)
       
+
+
 5) Password Strength Checker and Relations:
  
 • Attribute Relations: 
