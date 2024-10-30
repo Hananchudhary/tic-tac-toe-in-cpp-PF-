@@ -57,7 +57,7 @@ f^-1(strong) = password
   • Probability of Successful Guessing
        P = 1/N  (N =c^L)
 
-8) Computer Program for Password Strength Checker:
+8) Computer program for Password Strength Checker:
 
 #include <iostream>
 #include <string>
