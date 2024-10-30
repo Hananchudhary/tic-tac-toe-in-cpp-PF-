@@ -43,7 +43,7 @@ R(P) = Password is strong
 • Attribute Relations: 
      • Length vs. Character Diversity
      • Predictability vs. Length
-4) Password strength checker and Functions: 
+6) Password strength checker and Functions: 
 f(password) = strength 
 Domain : string of characters {A,B,....,Z,a,b,...,z,0,1,...,9,`,~,[ , ; , : , .....}
 Range: strength of password {weak,moderate,strong}
@@ -51,12 +51,12 @@ Range: strength of password {weak,moderate,strong}
 We can use inverse function for suggestion of strong password
 f^-1(strong) = password
 
-6) Password Strength Checker and Probability: 
+7) Password Strength Checker and Probability: 
 
   • Probability of Successful Guessing
        P = 1/N  (N =c^L)
 
-7) Computer Program for Password Strength Checker:
+8) Computer Program for Password Strength Checker:
 
 #include <iostream>
 #include <string>
@@ -142,7 +142,7 @@ int main() {
     return 0;
 }
 
-8) Real World Applications of Password Strength Checker: 
+9) Real World Applications of Password Strength Checker: 
 
 • Cryptocurrency Security
 • Protecting Digital Assets
@@ -150,10 +150,7 @@ int main() {
 • Online Banking & Financial Services:
 • Social Media Platforms:
 • Automated Home Lockdown: 
-
-9) A Question to think upon: 
-
-"Has a person lost their identity if they lose their password?" 
+ 
 
 10) Conclusion: 
 
