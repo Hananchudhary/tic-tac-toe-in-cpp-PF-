@@ -143,16 +143,20 @@ int main() {
     return  0;
 }
 
+
 9) Real World Applications of Password Strength Checker: 
 
-• Cryptocurrency Security
-• Protecting Digital Assets
-• Cloud Storage Services:
-• Online Banking & Financial Services:
-• Social Media Platforms:
-• Automated Home Lockdown: 
- 
+* Cryptocurrency Security
+* Protecting Digital Assets
+* Cloud Storage Services:
+* Online Banking & Financial Services:
+* Social Media Platforms:
+* Automated Home Lockdown:
 
-10) Conclusion: 
+Conclusion:
+Password Strength Checker is not just a technical tool but a critical component of a comprehensive security strategy
 
-Password Strength Checker is not just a technical tool but a critical component of a comprehensive security strategy 
+
+
+
+
