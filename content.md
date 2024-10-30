@@ -66,7 +66,7 @@ bool isUppercase(const string& pass) {
     for (char ch : pass) {
         if (isupper(ch)) return true;
     }
-    return false;
+  return false;
 }
 bool isLowercase(const string& pass) {
     for (char ch : pass) {
