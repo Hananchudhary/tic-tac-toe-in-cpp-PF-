@@ -4,7 +4,7 @@ Password strength checker is a tool designed to evaluate the security of a passw
 • Length
 • Character Variety 
 • Common Patterns 
-• Entropy
+• Entropy 
  
 2) Mathematical Foundations of Password Strength Checker:
 
@@ -13,7 +13,7 @@ Password strength checker is a tool designed to evaluate the security of a passw
 • Entropy 
       H = log (c)  base 2
       •   Number theory 
-      •   Pattern matching dictionary lookup
+      •   Pattern matching dictionary lookup  
 
 3) Password Strength Checker and Logical Proof:
 
