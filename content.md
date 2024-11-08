@@ -58,67 +58,80 @@ f^-1(strong) = password
        P = 1/N  (N =c^L)
 
 8) Computer program for Password Strength Checker:
-
 #include <iostream>
 #include <string>
-#include <cctype>
+
 using namespace std;
-bool isUppercase(const string& pass) {
-    for (char ch : pass) {
-        if (isupper(ch)) return true;
-    }
-  return false;
-}
-bool isLowercase(const string& pass) {
-    for (char ch : pass) {
-        if (islower(ch)) return true;
+
+bool length(char password[]) {
+    for (int i = 0; password[i] != '\0'; i++) {
+        if (i > 7) return true;
     }
     return false;
 }
-bool isDigit(const string& pass) {
-    for (char ch : pass) {
-        if (isdigit(ch)) return true;
+bool isUppercase(char password[]) {
+    for (int i = 0; password[i] != '\0'; i++)
+    {
+        if (password[i] > 66 && password[i] < 91)
+            return true;
     }
     return false;
 }
-bool isSpecialChar(const string& pass) {
-    string specialChars = "!@#$%^&*()-_=+[{]}|;:'\",<.>/?`~";
-    for (char ch : pass) {
-        if (specialChars.find(ch) != string::npos) return true;
+bool isLowercase(char password[]) {
+    for (int i = 0; password[i] != '\0'; i++)
+    {
+        if (password[i] > 96 && password[i] < 123) 
+            return true;
     }
     return false;
 }
-int PasswordStrength(const string& pass, string& feedback) {
+bool isDigit(char password[]) {
+    for (int i = 0; password[i] != '\0'; i++) 
+    {
+        if (password[i] > 47 && password[i] < 58)
+            return true;
+    }
+    return false;
+}
+bool isSpecialChar(char password[]) {
+    for (int i = 0; password[i] != '\0'; i++) 
+    {
+        if ((password[i] > 31 && password[i] < 48) || (password[i] > 90 && password[i] < 97) || (password[i] > 122 && password[i] < 127)) 
+            return true;
+    }
+    return false;
+}
+int PasswordStrength(char password[], string& feedback) {
     int score = 0;
     int totalCriteria = 5;
-    if (pass.length() >= 8) {
+    if (length(password)) {
         score += 1;
     }
     else {
         feedback += "- Password should be at least 8 characters long.\n";
     }
-    if (isUppercase(pass)) {
+    if (isUppercase(password)) {
         score += 1;
     }
     else {
         feedback += "- Add at least one uppercase letter.\n";
     }
 
-    if (isLowercase(pass)) {
+    if (isLowercase(password)) {
         score += 1;
     }
     else {
         feedback += "- Add at least one lowercase letter.\n";
     }
 
-    if (isDigit(pass)) {
+    if (isDigit(password)) {
         score += 1;
     }
     else {
         feedback += "- Add at least one digit (0-9).\n";
     }
 
-    if (isSpecialChar(pass)) {
+    if (isSpecialChar(password)) {
         score += 1;
     }
     else {
@@ -128,21 +141,25 @@ int PasswordStrength(const string& pass, string& feedback) {
     return percentage;
 }
 int main() {
-    string password;
+    char  password[100];
     string feedback = "";
+
     cout << "Enter your password: ";
-    cin >> password;
+
+    cin.getline(password, 100);
+
     int strengthPercentage = PasswordStrength(password, feedback);
+
     cout << "Password strength: " << strengthPercentage << "%" << endl;
+
     if (strengthPercentage < 100) {
-        cout << "Suggestions to improve your password:\n" << feedback;
+        cout << "Suggestions to improve your password: " << endl << feedback;
     }
     else {
         cout << "Your password is strong!" << endl;
     }
-    return  0;
+    return 0;
 }
-
 
 9) Real World Applications of Password Strength Checker: 
 
