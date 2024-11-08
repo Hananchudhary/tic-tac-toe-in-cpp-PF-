@@ -62,7 +62,6 @@ f^-1(strong) = password
 #include <string>
 
 using namespace std;
-
 bool length(char password[]) {
     for (int i = 0; password[i] != '\0'; i++) {
         if (i > 7) return true;
