@@ -6,3 +6,4 @@
 25-10-2024 learned using github from sara
 29-10-2024 added introduction 
 30 - 10 - 2024 prepared slides
+8-11-2024 changed program
