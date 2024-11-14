@@ -44,13 +44,16 @@ R(P) = Password is strong
 • Attribute Relations: 
      • Length vs. Character Diversity
      • Predictability vs. Length
-6) Password strength checker and Functions: 
-f(password) = strength 
-Domain : string of characters {A,B,....,Z,a,b,...,z,0,1,...,9,`,~,[ , ; , : , .....}
-Range: strength of password {weak,moderate,strong}
-• Inverse relation: 
-We can use inverse function for suggestion of strong password
-f^-1(strong) = password
+     • Predictability vs. Length
+  • Functions: 
+       f(password) = strength 
+  • Inverse relation: 
+       f^-1(strong) = password
+
+6) Password Strength and SQL Injection:
+  • Validation check
+    • Queries 
+      • Sub-queries
 
 7) Password Strength Checker and Probability : 
 
