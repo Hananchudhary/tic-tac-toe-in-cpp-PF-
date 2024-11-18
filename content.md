@@ -4,7 +4,7 @@ Password strength checker is a tool designed to evaluate the security of a passw
 • Length
 • Character Variety 
 • Common Patterns 
-• Entropy 
+
   
 2) Mathematical Foundations of Password Strength Checker:
 
