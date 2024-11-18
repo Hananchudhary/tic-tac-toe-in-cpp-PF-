@@ -10,10 +10,7 @@ Password strength checker is a tool designed to evaluate the security of a passw
 
 • Combinatorics   
        N = c^L 
-• Entropy 
-      H = log (c)  base 2
-      •   Number theory 
-      •   Pattern matching dictionary lookup 
+ 
 3) Password Strength Checker and Logical Proof:
 
 This is how password strength checker works:
