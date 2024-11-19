@@ -23,7 +23,7 @@ A weak password fails to meet one or more of these conditions, represented using
 ∨, "OR") or negation (
 ¬
 ¬, "NOT"). 
-SCREENSHOTS***
+
 . Fuzzy Logic and Membership Functions:
 Fuzzy logic uses degrees of truth (between 0 and 1) rather than binary true/false evaluations.
 Membership Function Example:
