@@ -12,28 +12,69 @@ Password strength checker is a tool designed to evaluate the security of a passw
        N = c^L 
  
 3) Password Strength Checker and Logical Proof:
+A proposition is a statement that is either true or false.
+Example: "The password contains at least one uppercase letter." This statement can be evaluated as true or false based on the password.
 
-This is how password strength checker works:
-Let, P be a Password 
-U(P) = Password has uppercase letter
-L(P) = Password has lowercase letter 
-D(P) = Password has digit
-S(P) = Password has special character 
-R(P) = Password is strong 
-(U(P) ∧ L(P) ∧ D(P) ∧ S(P)) → R(P)
- • Proof by cases :
-       • Case 1 (Too Short)
-       • Case 2 (Lacks Complexity)                     
-       • Case 3 (Predictable Patterns)
-       • Case 4 (Repeated or Sequential Characters)
-     A password P is weak if it meets any of the case.
+A strong password must satisfy all conditions, meaning it must include at least one character from each set. This is represented using logical conjunction (
+∧
+∧, "AND").
+A weak password fails to meet one or more of these conditions, represented using logical disjunction (
+∨
+∨, "OR") or negation (
+¬
+¬, "NOT"). 
+SCREENSHOTS***
+. Fuzzy Logic and Membership Functions:
+Fuzzy logic uses degrees of truth (between 0 and 1) rather than binary true/false evaluations.
+Membership Function Example:
+Membership value for uppercase letters:
+No uppercase letters → Membership = 0
+Few uppercase letters → Membership = 0.5
+Sufficient uppercase letters → Membership = 1
+Graphically:
+X-axis: Represents the number of uppercase letters (or other criteria).
+Y-axis: Represents membership values 
+[0,1]
+Membership is calculated as:
+ membership=Target Number of Uppercase Letters/Number of Uppercase Letters in Password.
+
 
 4) Password Strength Checker and Set Theory: 
+In set theory, we represent password characters as sets:
+A: Uppercase letters
+B: Lowercase letters
+C: Digits
+D: Special characters
+Set Operations:
+Union 
+∪: Combines characters from either set. E.g., 
+A∪B (uppercase or lowercase letters).
+Intersection (A∩C)=∅ (no overlap between uppercase letters and digits).
+Lattice theory and password strength checker:
+​A lattice organizes password criteria into subsets based on the number of conditions met. This enables a structured analysis of password strength.
 
-• Cardinality (Should be greater)
-• Union    (Should be greater)
-• Intersection         (Should be ∅)
-      
+Universal Set 
+U: Includes all allowed characters:Uppercase (𝐴), Lowercase (B), Digits (𝐶), Special Characters (𝐷)
+Intersection for Strong Passwords:
+𝑃(strong)=𝐴∩𝐵∩𝐶∩𝐷
+p(weak)=U-(A∩b∩c∩d)
+Lattice Visualization:
+Top Node(u)=All criteria met (Strongest Password).
+Bottom Node (∅): No criteria met (Weakest Password).
+ntermediate Nodes: Combinations of criteria (e.g.,A∩C,B∩D)
+Example lattice for 
+                  U (All criteria met)
+             /       |       |       \
+          A∩B∩C    A∩B∩D    A∩C∩D    B∩C∩D
+           /   \       |       /   \       |
+         A∩B    A∩C    A∩D    B∩C    B∩D    C∩D
+          |       |       |       |       |
+          A       B       C       D
+          \_______|_______|_______/
+                  ∅ (No criteria met)
+
+
+
 
 
 5) Password Strength Checker and Relations:
