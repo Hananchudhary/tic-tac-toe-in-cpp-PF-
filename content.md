@@ -224,7 +224,12 @@ int main() {
 10) Noteworthy historical incidents resulting from weak passwords:
 
   i- The 2014 Sony Pictures Hack
+      •	The hackers gained access to Sony's network
+      •	Personal details of 6,000 employees , thousands of private emails
+
   ii- The 2020 Twitter Hack
+      •	Hackers gained access to Twitter’s internal systems
+      •	Bitcoin scam
 
 Conclusion:
 Password Strength Checker is not just a technical tool but a critical component of a comprehensive security strategy.
