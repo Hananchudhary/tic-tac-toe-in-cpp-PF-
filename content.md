@@ -40,8 +40,8 @@ R(P) = Password is strong
  
 • Attribute Relations: 
      • Length vs. Character Diversity
-     • Predictability vs. Length
-     • Predictability vs. Length
+     • Entropy vs. Length
+     • Entropy vs. Character diversity
   • Functions: 
        f(password) = strength 
   • Inverse relation: 
