@@ -52,10 +52,23 @@ R(P) = Password is strong
     • Queries 
       • Sub-queries
 
-7) Password Strength Checker and Probability : 
+7) Password Strength Checker and Probability :
 
-  • Probability of Successful Guessing
+    Password strength checker stimulates various attack strategies:
+•	Brute-force(Trying every possible Combination)
+•	Dictionary-Based method(rely on probability to focus on common passwords)
+ 
+
+• Probability of Successful Guessing
        P = 1/N  (N =c^L)
+    
+For example # For strong password (length = 6) that contains uppercase, lowercase, numbers and special characters the probability is: 
+c = 26+26+10+32=94
+L = 6
+N=94^6
+So, P=1/94^6
+
+
 
 8) Computer program for Password Strength Checker:
 #include <iostream>
